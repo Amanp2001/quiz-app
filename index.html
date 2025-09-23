@@ -13,8 +13,29 @@
             <input type="text" id="option1" placeholder="Option 1" required>
             <input type="text" id="option2" placeholder="Option 2" required>
             <input type="text" id="option3" placeholder="Option 3" required>
-            <input type="text" id="option4" placeholder="option" required>
+            <input type="text" id="option4" placeholder="option 4" required>
+            
+            <label>Correct Option:-</label>
+            <input type="radio" name="correct" value="0" required>1
+            <input type="radio" name="correct" value="1" required>2
+            <input type="radio" name="correct" value="2" required>3
+            <input type="radio" name="correct" value="3" required>4
+
+            <button type="submit">Save Question</button>
         </form>
+        <button id="start-quiz" disabled>Take Quiz</button>
+        <div id="save-msg"></div>
+    </section>
+    <section id="quiz-section" style="display: none;">
+    <div id="quiz-content"></div>
+    <button id="next-btn">NEXt</button>
+    <div id="progress"></div>
+    </section>
+    
+    <section id="result-section" style="display: none;">
+    <div id="result-content"></div>
+    <button id="restart-btn">Retake-Quiz</button>
+    <button id="new-quiz-btn">Create New Quiz</button>
     </section>
 </body>
 <script src="script.js"></script>
