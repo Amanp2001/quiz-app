@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form id="quiz-form">
         <h1>Create-Quiz</h1>
         <section class="question">
             <label for="question">Enter the Question</label>
@@ -46,7 +46,22 @@
                 <button type="submit" id="take-quiz">Take-Quiz</button>
             </section>
         </section>
+        <div id="save-msg"></div>
 
     </form>
+    
+    <section id="quiz-section" style="display: none;">
+        <div id="quiz-content"></div>
+        <div>
+            <span id="progress"></span>
+        </div>
+        <button type="button" id="next-btn" style="display: none;">Next</button>
+    </section>
+
+    <section id="results-section" style="display:none;">
+        <div id="results-content"></div>
+        <button type="button" id="restart-btn" style="display:none;">Restart</button>
+        <button type="button" id="new-quiz-btn" style="display:none;">New Quiz</button>
+    </section>
 <script src="script.js"></script>
 </html>
