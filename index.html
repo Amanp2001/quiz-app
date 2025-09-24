@@ -7,38 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="create-section">
-        <h2>Create Quiz</h2>
-        <form id="quiz-form">
-            <input type="text" id="question" placeholder="Enter question" required>
-            <input type="text" id="option1" placeholder="Option 1" required>
-            <input type="text" id="option2" placeholder="Option 2" required>
-            <input type="text" id="option3" placeholder="Option 3" required>
-            <input type="text" id="option4" placeholder="option 4" required>
-            
-            <label>Correct Option:-</label>
-            <input type="radio" name="correct" value="0" required>1
-            <input type="radio" name="correct" value="1" required>2
-            <input type="radio" name="correct" value="2" required>3
-            <input type="radio" name="correct" value="3" required>4
+    <form>
+        <h1>Create-Quiz</h1>
+        <section class="question">
+            <label for="question">Enter the Question</label>
+            <input type="text" id="question" name="question" required>
+        </section>
 
-            <button type="submit">Save Question</button>
-        </form>
-        <button id="start-quiz" disabled>Take Quiz</button>
-        <div id="save-msg"></div>
-    </section>
-    <section id="quiz-section" style="display: none;">
-    <div id="quiz-content"></div>
-    <button id="next-btn">NEXt</button>
-    <div id="progress"></div>
-    </section>
-    
-    <section id="result-section" style="display: none;">
-    <h2>Results</h2>
-    <div id="result-content"></div>
-    <button id="restart-btn">Retake-Quiz</button>
-    <button id="new-quiz-btn">Create New Quiz</button>
-    </section>
-</body>
+        <section class="input">
+            <h2>Options</h2>
+            <div>
+                <label for="option1">Enter the option 1</label>
+                <input type="text" id="option1" name="option1" required>
+                <input type="radio" name="correct" value="1">Correct
+             </div>
+
+             <div>
+                <label for="option2">Enter the option 2</label>
+                <input type="text" id="option2" name="option2" required>
+                <input type="radio" name="correct" value="2">Correct
+             </div>
+             
+             <div>
+                <label for="option3">Enter the option 3</label>
+                <input type="text" id="option3" name="option3" required>
+                <input type="radio" name="correct" value="3">Correct
+             </div>
+            
+            <div>
+                <label for="option4">Enter the option 4</label>
+                <input type="text" id="option4" name="option4" required>
+                <input type="radio" name="correct" value="4">Correct
+            </div>
+        </section>
+        <section>
+            <section>
+                <button type="submit">Save</button>
+                <button type="submit" id="take-quiz">Take-Quiz</button>
+            </section>
+        </section>
+
+    </form>
 <script src="script.js"></script>
 </html>
